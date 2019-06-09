@@ -5,105 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Меню</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <style>
-        .menu {
-            background: rgb(255, 211, 130);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            position: fixed;
-            width: 100%;
-            font-size: 25px;
-            padding: 15px;
-            border-bottom: 2px solid black;
-        }
-
-        .menu-right {
-            position: absolute;
-            right: 50px;
-        }
-
-        .menu-left {
-            font-weight: bold;
-        }
-
-        .menu-right a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-        
-        .menu-right a:hover {
-            color: black;
-        }
-
-        body {
-            margin: 0;
-            background-image: url(2.jpg);
-            background-size: cover;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .email {
-            display: inline-block;
-            margin-top: 80px;
-        }
-
-        .search {
-            margin: auto;
-            width: fit-content;
-        }
-
-        .banner {
-            width: 100%;
-            height: 600px;
-            background-size: cover;
-            background-image: url(http://vsezhivoe.ru/wp-content/uploads/2017/08/homyak-polevoy.jpg);
-        }
-
-        .banner-title {
-            position: relative;
-            margin: auto;
-            width: fit-content;
-            display: inline-block;
-            margin-top: 300px;
-            font-size: 50px;
-            font-weight: 900;
-        }
-    </style>
-    <div class="menu">
-        <span class="menu-left">Меню</span>
-        <span class="menu-right">
-            <a href="https://ya.ru">Яндекс</a>
-            <a href="index.html">Главная</a>
-            <a href="1.jpg">Котик</a>
-            <a href="https://sites.google.com/view/svoykinafirstsite">Хомячки</a>        
-        </span>
-    </div>
-
-    <div class="banner">
-        <div class="background"></div>
-        <div class="banner-title">Хомячки - супер</div>
-    </div>
-
-    <div>
-        <form>
-            <div class="email">
-                Введите почту:
-                <input type="text" name="email">
-                <input type="button" value="Подтвердить">
-            </div>
-        </form>
-    </div>
-
-    <div>
-            <form action="https://yandex.ru/search/">
-                <div class="search">
-                    Введите запрос:
-                    <input type="text" name="text">
-                    <input type="submit" value="Найти">
+    <header>
+            <div class="menu">
+                    <span class="menu-left">Меню</span>
+                    <span class="menu-right">
+                        <a href="https://ya.ru">Яндекс</a>
+                        <a href="index.html">Главная</a>
+                        <a href="https://sites.google.com/view/svoykinafirstsite">Хомячки</a>        
+                    </span>
                 </div>
-            </form>
-        </div>
+            
+    </header>
+    <main id="main" class="main">
+            <div class="banner">
+                    <div class="background"></div>
+                    <div class="banner-title">Хомячки - супер</div>
+                </div>
+                <div class="main-cards">
+                    <div class="main-header">
+                       <h1>Лучшие хомячки мира</h1>
+                       <p>Если вам хочется тепла в этой жизни</p>
+                    </div>
+                    <div class="main-hamsters">
+                        <div class="hamster-card">
+                            <div class="card-image">
+                                <img width="190px" src="img/хомячик.jpg.jpg"
+                            </div>
+                            <div class="card-text">
+
+                            </div>
+                        </div>
+                        <div class="hamster-card">
+                                <div class="card-imag">
+                                    <img width="190px" scr="img/hamster.png">
+                                </div>
+
+                            <div class="card-text">
+                                <h4>Гайка</h4>
+                                <p>Мышь-изобретательница</p>
+                                <a href="#" class="card-button">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </main>
+    <footer class="footer" id="footer">
+            <div>
+                    <form>
+                        <div class="email">
+                            Введите почту:
+                            <input class="form-text" type="class" name="email">
+                            <input class="form-button" type="button" value="Подтвердить">
+                        </div>
+                    </form>
+                </div>
+            
+                <div>
+                        <form action="https://yandex.ru/search/">
+                            <div class="search">
+                                Введите запрос:
+                                <input class="form-text" type="text" name="text">
+                                <input class="form-button" type="submit" value="Найти">
+                            </div>
+                        </form>
+                    </div>
+    </footer>
+   
 </body>
 </html>
