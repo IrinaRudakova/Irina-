@@ -9,6 +9,7 @@
             font-size: 25px;
             padding: 15px;
             border-bottom: 2px solid rgb(68, 19, 19);
+            z-index: 1001;
         }
 
         .menu-right {
@@ -152,4 +153,26 @@
         }
         .logo-text {
             vertical-align: middle;
+        }
+        .item-window {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index:1000;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item-content {
+            width: 60%;
+            min-width: 500px;
+            height: 600px;
+            background: white;
+            padding: 15px;
+        }
+        .item-close {
+            width: 30px;
         }
