@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Докумeнт</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+    <p>Я один</p>
+    <p id="hid">Я два</p>
+    <div class="three">Я три</div>
+    <p>
+        <a href="#">Я читаури</a>
+    </p>
+    <h2 id="hover">И я тут</h2>
+    <button class="submit">Клякк</button>
+
+    <script>
+    $("p").css("color", "blue");
+    $("div.three").css("color", "red");
+    $("p#hid").css("color", "green");
+    $("a[href='#']").css("fontSize", "30px");
+    $("a[href='#']").css("color", "yellow");
+    $("h2#hover").mouseover(
+        function() {
+            $("h2#hover").css("color", "pink");
+        }
+    );
+    $("h2#hover").mouseout(
+        function() {
+            $("h2#hover").css("color", "black");
+        }
+    );
+    $(".submit").click(
+        function () {
+            $(".three").fadeOut(5000);
+
+        }
+    )
+
+
+    </script>
+</body>
+</html>
