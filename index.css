@@ -175,6 +175,7 @@
             min-width: 500px;
             background: white;
             padding: 15px;
+            position: relative;
         }
         .item-close {
             width: 30px;
@@ -200,6 +201,8 @@
         }
         @media screen and (max-width: 600px) {
             .menu-right a {
+                padding: 10px;
+                display: block;
             }
 
             .menu-right img {
