@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button class="submit">Включить машину смерти</button>
+    <div class="loader"></div>
+    <style>
+        .submit {
+            background: white;
+            padding: 10px;
+            border: 1px solid black;
+            cursor: pointer;
+            font-size: 20px;
+            transition: .7s all;
+            transition: background 1s,
+            border-radius .7s, color 1.9s,
+            box-shadow .9s;
+        }
+
+        .submit:hover {
+            background: black;
+            color: white;
+            border-radius: 50px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2)
+        }
+
+        .loader {
+            border: 15px solid rgb(63, 9, 9);
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border-top: solid white;
+            animation: spin 0.1s infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0)
+            }
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+    </style>
+</body>
+</html>
