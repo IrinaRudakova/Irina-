@@ -1,3 +1,18 @@
+.carousel-item {
+    max-height: 500px;
+}
+.card {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    transition: .9s all
+}
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.main-contrasts {
+    margin-right: 100px;
+}
 .menu {
             background: rgba(243, 188, 86, 0.9);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -210,12 +225,22 @@
             height: 30px;
         }
 
-        .results-item {
-            display: flex;
+        .results-item-text h3 {
+            display: none;
+            margin: 0px;
         }
 
-        .results-item h2 {
-            margin-top: 0;
+        .results-item {
+            display: none;
+        }
+
+        .results-item h3 {
+            margin: 0;
+            display: none;
+        }
+        .results-item p {
+            display: none;
+            margin: 0px;
         }
         @media screen and (max-width: 600px) {
             .menu-right a {
@@ -245,5 +270,8 @@
                 text-align: center;
                 display: none;
             }
+            .h3 {
+                color: blue;
+            }
         }
-        
+            
