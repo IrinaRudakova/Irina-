@@ -14,7 +14,7 @@
     margin-right: 100px;
 }
 .menu {
-            background: rgba(243, 188, 86, 0.9);
+            background: rgba(207, 200, 187, 0.9);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             position: fixed;
             top: 0;
@@ -110,7 +110,7 @@
         }
         .footer {
             padding: 100px 15px;
-            background: rgba(255, 211, 130);
+            background: rgb(211, 208, 204);
             background-image: url(img/фон.jpg);
             background-size: cover;
             color: white;
@@ -217,7 +217,6 @@
 
         .results {
             display: flex;
-            justify-content: space-evenly;
         }
 
         .results-item-icon {
@@ -226,21 +225,66 @@
         }
 
         .results-item-text h3 {
-            display: none;
+            display: flex;
             margin: 0px;
         }
 
         .results-item {
-            display: none;
+            display: flex;
         }
 
         .results-item h3 {
             margin: 0;
-            display: none;
+            display: flex;
         }
         .results-item p {
-            display: none;
-            margin: 0px;
+            display: flex;
+            margin: none;
+        }
+        .center {
+            margin: auto;
+            display: block;
+        }
+        .color-color {
+            color: rgb(80, 80, 172);
+        }
+        .main {
+            padding: 30px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .line {
+            margin: auto;
+            display: block;
+        }
+
+        .features {
+            display: flex;
+            align-items: center;
+        }
+
+        .features p {
+            margin-left: 20px;
+        }
+
+        .results .results-item-icon {
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+
+        .grey-grey {
+            color: grey;
+        }
+        .grey-grey2 {
+            color: grey;
+        }
+
+        .results-right {
+            margin-left: 15px;
         }
         @media screen and (max-width: 600px) {
             .menu-right a {
@@ -270,8 +314,4 @@
                 text-align: center;
                 display: none;
             }
-            .h3 {
-                color: blue;
-            }
-        }
-            
+    }
